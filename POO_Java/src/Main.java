@@ -1,5 +1,8 @@
+import animais.Cachorro;
+import animais.Gato;
 import carro.Carro;
 import contaBancaria.ContaBancaria;
+import animais.Animal;
 public class Main {
     public static void main(String[] args) {
 
@@ -13,10 +16,26 @@ public class Main {
 
         // ----------------------------------------- CONTA BANCARIA ------------------------------------------
 
-        ContaBancaria conta1 = new ContaBancaria(1800.93, "Rebecca Nery");
-        conta1.exibeInfo();
-        conta1.depositar(200.87);
-        conta1.sacar(300);
+//        ContaBancaria conta1 = new ContaBancaria(1800.93, "Rebecca Nery");
+//        conta1.exibeInfo();
+//        conta1.depositar(200.87);
+//        conta1.sacar(300);
+
+        // ----------------------------------------- ANIMAIS ------------------------------------------
+
+        Animal animal1 = new Animal("Mamífero", "Coelho", "Rosa");
+        Animal animal2 = new Animal("Ave", "Papagaio", "Verde");
+        Animal animal3 = new Animal("Peixe", "Tubarão", "Cinza");
+        animal3.fazerSom();
+
+        Animal gato1 = new Gato("Mamífero", "Mushu", "Laranja");
+        Animal cachorro1 = new Cachorro("Mamífero", "Antônio", "Caramelo");
+        gato1.exibeInfo();
+        cachorro1.exibeInfo();
+        gato1.fazerSom();
+        cachorro1.fazerSom();
+
+
 
     }//metodo main
 }// classe Main
