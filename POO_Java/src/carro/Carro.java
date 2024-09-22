@@ -67,4 +67,8 @@ public class Carro {
         this.exibeInfo();
     }
 
+    public void exibeVel(){
+        System.out.println("Velocidade: " + this.velocidade);
+    }
+
 }
