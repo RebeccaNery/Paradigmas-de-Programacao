@@ -16,6 +16,7 @@ import calculadora.Calculadora;
 import funcAbstrato.FuncionarioAbstrato;
 import funcAbstrato.FuncAssalariado;
 import funcAbstrato.FuncHorista;
+import somarProdutos.Produto;
 
 
 public class Main {
@@ -101,6 +102,24 @@ public class Main {
 //        FuncionarioAbstrato func2 = new FuncHorista("Gabriel", 50.00, 100.00);
 //        func1.calcularSalario();
 //        func2.calcularSalario();
+
+        // ----------------------------------------- SOMAR PRODUTOS  ------------------------------------------
+        // Criando dois objetos Produto
+        Produto produto1 = new Produto("Produto A", 30.0);
+        Produto produto2 = new Produto("Produto B", 50.0);
+
+        // Somando os produtos usando o método somar
+        Produto produtoSomado = produto1.somar(produto2);
+
+        // Exibindo os produtos individuais e o resultado da soma
+        System.out.println(produto1);
+        System.out.println(produto2);
+        System.out.println("Resultado da soma:");
+        System.out.println(produtoSomado);
+
+
+
+
 
     }//metodo main
 }// classe Main
