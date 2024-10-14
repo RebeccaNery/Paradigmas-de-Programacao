@@ -5,6 +5,8 @@ import carro.CarroComMotor;
 import carro.Motor;
 import contaBancaria.ContaBancaria;
 import animais.Animal;
+import escola.Professor;
+import escola.Escola;
 
 public class Main {
     public static void main(String[] args) {
@@ -40,11 +42,19 @@ public class Main {
 
         // ----------------------------------------- CARRO E MOTOR  ------------------------------------------
 
-        CarroComMotor carroMotor1 = new CarroComMotor("Fiat", "Uno", 1, "Flex");
-        carroMotor1.exibirDetalhes();
+//        CarroComMotor carroMotor1 = new CarroComMotor("Fiat", "Uno", 1, "Flex");
+//        carroMotor1.exibirDetalhes();
 
         // ----------------------------------------- PROFESSOR E ESCOLA  ------------------------------------------
 
+        Professor professor1 = new Professor("Rebecca", "Matemática");
+        Professor professor2 = new Professor("João", "Português");
+        Escola escola1 = new Escola("Escola Estadual", "Rua das Flores");
+        Escola escola2 = new Escola("Escola Municipal", "Rua das Pedras");
+        escola1.associarProfessor(professor1);
+        professor2.associarEscola(escola2);
+        escola1.exibirInfo();
+        professor2.exibirInfo();
 
     }//metodo main
 }// classe Main
