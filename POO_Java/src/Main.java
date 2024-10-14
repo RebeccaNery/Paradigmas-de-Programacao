@@ -1,17 +1,23 @@
-import Empresa.Empresa;
-import Empresa.Funcionario;
+import animais.Animal;
 import animais.Cachorro;
 import animais.Gato;
 import carro.Carro;
 import carro.CarroComMotor;
 import carro.Motor;
 import contaBancaria.ContaBancaria;
-import animais.Animal;
-import escola.Professor;
+//import empresa.Funcionario;
+//import empresa.Empresa;
 import escola.Escola;
+import escola.Professor;
+import imprimir.Imprimivel;
+import imprimir.Relatorio;
+import imprimir.Contrato;
+import calculadora.Calculadora;
 
 public class Main {
     public static void main(String[] args) {
+
+        // TESTES DAS CLASSES
 
         // ----------------------------------------- CARRO ------------------------------------------
 
@@ -60,17 +66,30 @@ public class Main {
 
         // ----------------------------------------- EMPRESA E FUNCIONARIO  ------------------------------------------
 
-        Funcionario func1 = new Funcionario("Rebecca", "Desenvolvedora", 5000.00);
-        Funcionario func2 = new Funcionario("Gabriel", "Analista", 7000.00);
-        Funcionario func3 = new Funcionario("Tarcila", "Física", 10000.00);
-        Empresa empresa1 = new Empresa("Empresa da Barbie", "123456789", 2);
-        Empresa empresa2 = new Empresa("Empresa do Ken", "987654321", 1);
-        empresa1.contratarFuncionario(func1);
-        empresa2.contratarFuncionario(func2);
-        empresa2.contratarFuncionario(func3);
-        empresa2.contratarFuncionario(func1);
-        empresa1.exibirInfo();
-        empresa2.exibirInfo();
+//        Funcionario func1 = new Funcionario("Rebecca", "Desenvolvedora", 5000.00);
+//        Funcionario func2 = new Funcionario("Gabriel", "Analista", 7000.00);
+//        Funcionario func3 = new Funcionario("Tarcila", "Física", 10000.00);
+//        Empresa empresa1 = new Empresa("empresa da Barbie", "123456789", 2);
+//        Empresa empresa2 = new Empresa("empresa do Ken", "987654321", 1);
+//        empresa1.contratarFuncionario(func1);
+//        empresa2.contratarFuncionario(func2);
+//        empresa2.contratarFuncionario(func3);
+//        empresa2.contratarFuncionario(func1);
+//        empresa1.exibirInfo();
+//        empresa2.exibirInfo();
+
+        // ----------------------------------------- INTERFACE IMPRIMIVEL  ------------------------------------------
+
+//        Contrato contrato1 = new Contrato("Contrato de compra e venda", "Compra de um carro");
+//        contrato1.imprimir();
+//        Relatorio relatorio1 = new Relatorio("Relatório de vendas", "Vendas do mês de setembro");
+//        relatorio1.imprimir();
+
+        // ----------------------------------------- CALCULADORA  ------------------------------------------
+
+        Calculadora calc = new Calculadora();
+        calc.somar(2, 3);
+        calc.somar(2, 3, 4);
 
     }//metodo main
 }// classe Main

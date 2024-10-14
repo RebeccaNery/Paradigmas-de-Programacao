@@ -1,29 +1,25 @@
-package Empresa;
+package empresa;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Empresa {
     private String nome;
     private String cnpj;
-    private Funcionario[] funcionarios;
-    private int numFuncionarios;
+    private List<Funcionario> funcionarios;
 
     public Empresa(String nome, String cnpj, int numFuncionarios) {
         this.nome = nome;
         this.cnpj = cnpj;
-        this.funcionarios = new Funcionario[numFuncionarios];
-        this.numFuncionarios = 0;
+        this.funcionarios = new ArrayList<Funcionario>();
     }
 
     public void contratarFuncionario(Funcionario func) {
-        if (numFuncionarios < funcionarios.length) {
-            funcionarios[numFuncionarios] = func;
-            numFuncionarios++;
-        } else {
-            System.out.println("Não foi possível contratar o(a) funcionário(a). Número máximo de funcionários atingido.");
-        }
+        funcionarios.add(func);
     }
 
     public void exibirInfo() {
-        System.out.println(">>> Dados da Empresa >>>");
+        System.out.println(">>> Dados da empresa >>>");
         System.out.println("- Nome: " + this.nome);
         System.out.println("- CNPJ: " + this.cnpj);
         System.out.println("- Funcionários:");
