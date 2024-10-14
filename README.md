@@ -3,4 +3,4 @@
 
 Cada um dos exercícios foi feito na linguagem Python, Java e também Golang.
 
-Os exercícios propostos pelo professor estão no arquivo Proposta de exercicios praticos.pdf
+Os exercícios propostos pelo professor estão no arquivo 'Proposta de Exercícios Práticos - Paradigmas de Linguagem de Programação - Lista 01 (15 questões).docx.pdf'
