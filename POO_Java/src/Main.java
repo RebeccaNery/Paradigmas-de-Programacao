@@ -1,3 +1,5 @@
+import Empresa.Empresa;
+import Empresa.Funcionario;
 import animais.Cachorro;
 import animais.Gato;
 import carro.Carro;
@@ -47,14 +49,28 @@ public class Main {
 
         // ----------------------------------------- PROFESSOR E ESCOLA  ------------------------------------------
 
-        Professor professor1 = new Professor("Rebecca", "Matemática");
-        Professor professor2 = new Professor("João", "Português");
-        Escola escola1 = new Escola("Escola Estadual", "Rua das Flores");
-        Escola escola2 = new Escola("Escola Municipal", "Rua das Pedras");
-        escola1.associarProfessor(professor1);
-        professor2.associarEscola(escola2);
-        escola1.exibirInfo();
-        professor2.exibirInfo();
+//        Professor professor1 = new Professor("Rebecca", "Matemática");
+//        Professor professor2 = new Professor("João", "Português");
+//        Escola escola1 = new Escola("Escola Estadual", "Rua das Flores");
+//        Escola escola2 = new Escola("Escola Municipal", "Rua das Pedras");
+//        escola1.associarProfessor(professor1);
+//        professor2.associarEscola(escola2);
+//        escola1.exibirInfo();
+//        professor2.exibirInfo();
+
+        // ----------------------------------------- EMPRESA E FUNCIONARIO  ------------------------------------------
+
+        Funcionario func1 = new Funcionario("Rebecca", "Desenvolvedora", 5000.00);
+        Funcionario func2 = new Funcionario("Gabriel", "Analista", 7000.00);
+        Funcionario func3 = new Funcionario("Tarcila", "Física", 10000.00);
+        Empresa empresa1 = new Empresa("Empresa da Barbie", "123456789", 2);
+        Empresa empresa2 = new Empresa("Empresa do Ken", "987654321", 1);
+        empresa1.contratarFuncionario(func1);
+        empresa2.contratarFuncionario(func2);
+        empresa2.contratarFuncionario(func3);
+        empresa2.contratarFuncionario(func1);
+        empresa1.exibirInfo();
+        empresa2.exibirInfo();
 
     }//metodo main
 }// classe Main
