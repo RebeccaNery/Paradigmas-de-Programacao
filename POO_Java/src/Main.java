@@ -9,6 +9,7 @@ import contaBancaria.ContaBancaria;
 //import empresa.Empresa;
 import escola.Escola;
 import escola.Professor;
+import excecoes.SaldoInsuficienteException;
 import imprimir.Imprimivel;
 import imprimir.Relatorio;
 import imprimir.Contrato;
@@ -22,7 +23,7 @@ import somarProdutos.Produto;
 
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SaldoInsuficienteException {
 
         // TESTES DAS CLASSES
 
@@ -40,6 +41,7 @@ public class Main {
 //        conta1.exibeInfo();
 //        conta1.depositar(200.87);
 //        conta1.sacar(300);
+//        conta1.sacar(5000);
 
         // ----------------------------------------- ANIMAIS ------------------------------------------
 

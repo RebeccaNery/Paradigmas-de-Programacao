@@ -8,6 +8,8 @@ acessos indevidos ou modificações erradas.*/
 
 package contaBancaria;
 
+import excecoes.SaldoInsuficienteException;
+
 public class ContaBancaria {
 
     //Atributos
@@ -42,9 +44,15 @@ public class ContaBancaria {
         System.out.println("Depósito de R$" + valor + " realizado com sucesso. Saldo atual: R$" + String.format("%.2f", saldo));
     }
 
-    public void sacar(double valor){
-        this.saldo = saldo - valor;
-        System.out.println("Saque de R$" + valor + " realizado com sucesso. Saldo atual: R$" + String.format("%.2f", saldo));
+    public void sacar(double valor) throws SaldoInsuficienteException {
+        if (valor > saldo) {
+            // Lança a exceção personalizada se o saldo for insuficiente
+            throw new SaldoInsuficienteException("Saldo insuficiente para realizar o saque. Saldo disponível: R$ " + saldo);
+        }else{
+            this.saldo = saldo - valor;
+            System.out.println("Saque de R$" + valor + " realizado com sucesso. Saldo atual: R$" + String.format("%.2f", saldo));
+        }
+
     }
 
     public void exibeInfo(){
