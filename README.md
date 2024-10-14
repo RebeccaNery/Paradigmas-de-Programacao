@@ -3,4 +3,4 @@
 
 Cada um dos exercícios foi feito na linguagem Python, Java e também Golang.
 
-Os exercícios propostos pelo professor estão no arquivo Proposta-de-exercicios.pdf
+Os exercícios propostos pelo professor estão no arquivo Proposta de exercicios praticos.pdf
