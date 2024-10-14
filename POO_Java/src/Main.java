@@ -13,6 +13,10 @@ import imprimir.Imprimivel;
 import imprimir.Relatorio;
 import imprimir.Contrato;
 import calculadora.Calculadora;
+import funcAbstrato.FuncionarioAbstrato;
+import funcAbstrato.FuncAssalariado;
+import funcAbstrato.FuncHorista;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -87,9 +91,16 @@ public class Main {
 
         // ----------------------------------------- CALCULADORA  ------------------------------------------
 
-        Calculadora calc = new Calculadora();
-        calc.somar(2, 3);
-        calc.somar(2, 3, 4);
+//        Calculadora calc = new Calculadora();
+//        calc.somar(2, 3);
+//        calc.somar(2, 3, 4);
+
+        // ----------------------------------------- FUNCIONARIO ABSTRATO  ------------------------------------------
+
+//        FuncionarioAbstrato func1 = new FuncAssalariado("Rebecca", 5000.00);
+//        FuncionarioAbstrato func2 = new FuncHorista("Gabriel", 50.00, 100.00);
+//        func1.calcularSalario();
+//        func2.calcularSalario();
 
     }//metodo main
 }// classe Main
