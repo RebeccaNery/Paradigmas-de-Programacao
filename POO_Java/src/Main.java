@@ -16,6 +16,7 @@ import calculadora.Calculadora;
 import funcAbstrato.FuncionarioAbstrato;
 import funcAbstrato.FuncAssalariado;
 import funcAbstrato.FuncHorista;
+import matematica.Matematica;
 import somarProdutos.Produto;
 
 
@@ -105,17 +106,23 @@ public class Main {
 
         // ----------------------------------------- SOMAR PRODUTOS  ------------------------------------------
         // Criando dois objetos Produto
-        Produto produto1 = new Produto("Produto A", 30.0);
-        Produto produto2 = new Produto("Produto B", 50.0);
+//        Produto produto1 = new Produto("Produto A", 30.0);
+//        Produto produto2 = new Produto("Produto B", 50.0);
+//
+//        // Somando os produtos usando o método somar
+//        Produto produtoSomado = produto1.somar(produto2);
+//
+//        // Exibindo os produtos individuais e o resultado da soma
+//        System.out.println(produto1);
+//        System.out.println(produto2);
+//        System.out.println("Resultado da soma:");
+//        System.out.println(produtoSomado);
 
-        // Somando os produtos usando o método somar
-        Produto produtoSomado = produto1.somar(produto2);
-
-        // Exibindo os produtos individuais e o resultado da soma
-        System.out.println(produto1);
-        System.out.println(produto2);
-        System.out.println("Resultado da soma:");
-        System.out.println(produtoSomado);
+        // ----------------------------------------- MATEMATICA  ------------------------------------------
+        // Testando o método estático calcularFatorial
+        int numero = 5;
+        int fatorial = Matematica.calcularFatorial(numero);
+        System.out.println("O fatorial de " + numero + " é: " + fatorial);
 
 
 
