@@ -17,6 +17,7 @@ import funcAbstrato.FuncionarioAbstrato;
 import funcAbstrato.FuncAssalariado;
 import funcAbstrato.FuncHorista;
 import matematica.Matematica;
+import singleton.Configuracao;
 import somarProdutos.Produto;
 
 
@@ -120,10 +121,28 @@ public class Main {
 
         // ----------------------------------------- MATEMATICA  ------------------------------------------
         // Testando o método estático calcularFatorial
-        int numero = 5;
-        int fatorial = Matematica.calcularFatorial(numero);
-        System.out.println("O fatorial de " + numero + " é: " + fatorial);
+//        int numero = 5;
+//        int fatorial = Matematica.calcularFatorial(numero);
+//        System.out.println("O fatorial de " + numero + " é: " + fatorial);
 
+        // ----------------------------------------- CONFIGURACAO  ------------------------------------------
+        // Tentando obter a instância da classe Configuracao
+//        Configuracao configuracao1 = Configuracao.getInstancia();
+//        System.out.println("Configuração 1, Valor de config1: " + configuracao1.getConfig1());
+//
+//        // Modificando a configuração
+//        configuracao1.setConfig1("Novo Valor 1");
+//
+//        // Obtendo a instância novamente
+//        Configuracao configuracao2 = Configuracao.getInstancia();
+//        System.out.println("Configuração 2, Valor de config1: " + configuracao2.getConfig1());
+//
+//        // Verificando se ambas as referências apontam para a mesma instância
+//        if (configuracao1 == configuracao2) {
+//            System.out.println("As duas referências são a mesma instância.");
+//        } else {
+//            System.out.println("As duas referências são instâncias diferentes.");
+//        }
 
 
 
